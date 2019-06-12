@@ -82,10 +82,10 @@
 		B29216D62282BEFF004B1B9E /* String-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29216D52282BEFF004B1B9E /* String-Extension.swift */; };
 		B29216DA2282CCA0004B1B9E /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29216D92282CCA0004B1B9E /* LoginModel.swift */; };
 		B29BD02E22B089A800F4835E /* OHReapyRecondTotalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29BD02D22B089A800F4835E /* OHReapyRecondTotalViewController.swift */; };
-		B29BD03222B08D0000F4835E /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29BD03122B08D0000F4835E /* PageTitleView.swift */; };
-		B29BD03422B096B200F4835E /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29BD03322B096B200F4835E /* PageContentView.swift */; };
 		B29BD03622B0A5A000F4835E /* OHRepayFirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29BD03522B0A5A000F4835E /* OHRepayFirstViewController.swift */; };
 		B29BD03822B0A5AD00F4835E /* OHRepaySecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29BD03722B0A5AD00F4835E /* OHRepaySecondViewController.swift */; };
+		B29BD03C22B105D300F4835E /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29BD03A22B105D300F4835E /* PageContentView.swift */; };
+		B29BD03D22B105D300F4835E /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B29BD03B22B105D300F4835E /* PageTitleView.swift */; };
 		B2A3164B227EE42400CB043D /* TestOCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2A3164A227EE42400CB043D /* TestOCViewController.m */; };
 		B2B18D0A22850F37005745D5 /* Image-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B18D0922850F37005745D5 /* Image-Extension.swift */; };
 		B2B18D0E228544E0005745D5 /* QRCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B18D0D228544E0005745D5 /* QRCodeViewController.swift */; };
@@ -186,10 +186,10 @@
 		B29216D52282BEFF004B1B9E /* String-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String-Extension.swift"; sourceTree = "<group>"; };
 		B29216D92282CCA0004B1B9E /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		B29BD02D22B089A800F4835E /* OHReapyRecondTotalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OHReapyRecondTotalViewController.swift; sourceTree = "<group>"; };
-		B29BD03122B08D0000F4835E /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
-		B29BD03322B096B200F4835E /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		B29BD03522B0A5A000F4835E /* OHRepayFirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OHRepayFirstViewController.swift; sourceTree = "<group>"; };
 		B29BD03722B0A5AD00F4835E /* OHRepaySecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OHRepaySecondViewController.swift; sourceTree = "<group>"; };
+		B29BD03A22B105D300F4835E /* PageContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
+		B29BD03B22B105D300F4835E /* PageTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		B2A31649227EE42400CB043D /* TestOCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestOCViewController.h; sourceTree = "<group>"; };
 		B2A3164A227EE42400CB043D /* TestOCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestOCViewController.m; sourceTree = "<group>"; };
 		B2B18D0922850F37005745D5 /* Image-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image-Extension.swift"; sourceTree = "<group>"; };
@@ -911,18 +911,18 @@
 		B29BD02F22B08CE200F4835E /* PageTitle */ = {
 			isa = PBXGroup;
 			children = (
-				B29BD03022B08CE200F4835E /* View */,
+				B29BD03922B105D300F4835E /* view */,
 			);
 			path = PageTitle;
 			sourceTree = "<group>";
 		};
-		B29BD03022B08CE200F4835E /* View */ = {
+		B29BD03922B105D300F4835E /* view */ = {
 			isa = PBXGroup;
 			children = (
-				B29BD03122B08D0000F4835E /* PageTitleView.swift */,
-				B29BD03322B096B200F4835E /* PageContentView.swift */,
+				B29BD03A22B105D300F4835E /* PageContentView.swift */,
+				B29BD03B22B105D300F4835E /* PageTitleView.swift */,
 			);
-			path = View;
+			path = view;
 			sourceTree = "<group>";
 		};
 		B2B18D0B228544AE005745D5 /* qrCode */ = {
@@ -1152,11 +1152,11 @@
 				B27CB2922277DF69007707E0 /* UserInfo.swift in Sources */,
 				B239937022826C1F0006B5EE /* MainTopNormalCollectionCell.swift in Sources */,
 				B20163602283D7D600DD50C5 /* AuthorizationTool.swift in Sources */,
-				B29BD03422B096B200F4835E /* PageContentView.swift in Sources */,
 				B2138B372276A3450039BF12 /* SwiftNotice.swift in Sources */,
 				B2B18D0A22850F37005745D5 /* Image-Extension.swift in Sources */,
 				B27CB2942277EE2B007707E0 /* LoginInfo.swift in Sources */,
 				B239937522827DF90006B5EE /* PersonNormalTableCell.swift in Sources */,
+				B29BD03D22B105D300F4835E /* PageTitleView.swift in Sources */,
 				B203D7E1227594730067359C /* NetWorkTools.swift in Sources */,
 				B2138B402276D8850039BF12 /* SecondNormalCell.swift in Sources */,
 				B28197D022895B1000A28EB9 /* BaseCustomCalloutView.m in Sources */,
@@ -1201,11 +1201,11 @@
 				B2138B322276994E0039BF12 /* UserModel.swift in Sources */,
 				B211E9BB227E9471008D27F3 /* Array-Extension.swift in Sources */,
 				B239936222815D9B0006B5EE /* SearchViewController.swift in Sources */,
-				B29BD03222B08D0000F4835E /* PageTitleView.swift in Sources */,
 				B27CB2A22278367D007707E0 /* RegisterViewController.swift in Sources */,
 				B2138B3D2276C8130039BF12 /* SecondModel.swift in Sources */,
 				B211E9B7227E7626008D27F3 /* BaseWebViewController.swift in Sources */,
 				B203D7D322758B780067359C /* MainTabbarViewController.swift in Sources */,
+				B29BD03C22B105D300F4835E /* PageContentView.swift in Sources */,
 				B2138B3422769A9D0039BF12 /* FirstViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
