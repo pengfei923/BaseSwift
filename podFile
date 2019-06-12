@@ -1,0 +1,50 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/aliyun/aliyun-specs.git'
+platform :ios, '8.0'
+use_frameworks!
+target 'OHFinancialServices' do
+
+  pod 'Alamofire' #网络请求
+  pod 'Kingfisher' #图片加载
+  pod 'RxSwift' #
+  pod 'RxCocoa'
+<<<<<<< HEAD
+  
+=======
+>>>>>>> 533dd51c1a2dc16ed49677937ae2df678d4352be
+  pod 'RxDataSources'
+  pod 'Presentr' #弹出框
+#  pod 'Material' #
+  pod 'MJRefresh' # 刷新控件
+#  pod 'SVProgressHUD'
+#  pod 'JPush' #极光推送
+#  pod 'PromiseKit'
+#  pod 'OpenCV'
+  pod 'PGDatePicker'
+  pod 'RxAlamofire'
+  pod 'PromiseKit'
+<<<<<<< HEAD
+#  pod 'SwiftDate'
+#  pod 'AAInfographics'
+#  pod 'IQKeyboardManagerSwift'
+#  pod 'SideMenu'
+#  pod 'SwiftyJSON'
+#  pod 'HandyJSON'
+#   pod 'MonkeyKing' #社会化分享 支付
+#   pod 'RAMAnimatedTabBarController' #漂亮的tabbar按钮
+
+# 高德地图定位头文件
+  pod 'AMap3DMap'  #3D地图
+  pod 'AMapSearch'  #sdk搜索功能
+  pod 'AMapLocation'  #定位权限
+  pod 'YYKit'
+
+=======
+  pod 'SwiftDate'
+  pod 'AAInfographics'
+  pod 'IQKeyboardManagerSwift'
+#  pod 'SideMenu'
+  pod 'SwiftyJSON'
+#  pod 'HandyJSON'
+>>>>>>> 533dd51c1a2dc16ed49677937ae2df678d4352be
+end

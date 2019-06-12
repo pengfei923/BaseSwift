@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="BannerView" customModule="OHFinancialServices" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="194"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="bRk-bK-Nke">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="160"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="z0h-3F-Nnn">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Sv0-aJ-df3">
+                    <rect key="frame" x="187.5" y="123" width="39" height="37"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Sv0-aJ-df3" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="6gZ-Gz-uXg"/>
+                <constraint firstItem="Sv0-aJ-df3" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="95C-9t-mjm"/>
+                <constraint firstItem="bRk-bK-Nke" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Hlr-M2-TLp"/>
+                <constraint firstItem="bRk-bK-Nke" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WbI-FF-UVj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="bRk-bK-Nke" secondAttribute="bottom" id="dC1-gF-3CA"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="bRk-bK-Nke" secondAttribute="trailing" id="lNA-Vj-nsa"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="BannerCollectionView" destination="bRk-bK-Nke" id="QyN-9K-ZDa"/>
+                <outlet property="BannerPageControl" destination="Sv0-aJ-df3" id="Wan-2o-jzM"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="388.39285714285711"/>
+        </view>
+    </objects>
+</document>
