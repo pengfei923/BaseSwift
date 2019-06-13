@@ -34,7 +34,7 @@ class ThirdViewController: BaseSwiftViewController {
         return helper
     }()
     
-    private lazy var dataArray : [String] = ["测试webView","测试登录界面细节","测试bar按钮","测试倒计时按钮","测试保存数据","测试删除数据","测试获取数据","测试二维码的生成","获取定位权限","基础方法的调用","获取产品列表"]
+    private lazy var dataArray : [String] = ["测试webView","测试登录界面细节","测试bar按钮","测试倒计时按钮","测试保存数据","测试删除数据","测试获取数据","测试二维码的生成","获取定位权限","基础方法的调用","内容提示信息"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -133,6 +133,9 @@ extension ThirdViewController:UITableViewDelegate,UITableViewDataSource {
             let vc = BaseFuncViewController()
             vc.hidesBottomBarWhenPushed = true
             self.navigationController?.pushViewController(vc, animated: true)
+        }
+        if indexPath.row == 10 {
+            
         }
     }
 }

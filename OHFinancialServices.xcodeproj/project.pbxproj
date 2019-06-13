@@ -98,6 +98,7 @@
 		B2B5A67B2293CDF900F6F235 /* SystomContactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B5A6792293CDF900F6F235 /* SystomContactCell.swift */; };
 		B2B5A67C2293CDF900F6F235 /* SystomContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2B5A67A2293CDF900F6F235 /* SystomContactCell.xib */; };
 		B2B843B7227ECA1E009EC329 /* BaseLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B843B6227ECA1E009EC329 /* BaseLabel.swift */; };
+		B2BE10DC22B1DF94006A4AE2 /* PublicAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE10DB22B1DF94006A4AE2 /* PublicAlertController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -204,6 +205,7 @@
 		B2B5A6792293CDF900F6F235 /* SystomContactCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystomContactCell.swift; sourceTree = "<group>"; };
 		B2B5A67A2293CDF900F6F235 /* SystomContactCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SystomContactCell.xib; sourceTree = "<group>"; };
 		B2B843B6227ECA1E009EC329 /* BaseLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLabel.swift; sourceTree = "<group>"; };
+		B2BE10DB22B1DF94006A4AE2 /* PublicAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicAlertController.swift; sourceTree = "<group>"; };
 		D336CA1D3001864F070163EC /* Pods-OHFinancialServices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OHFinancialServices.debug.xcconfig"; path = "Target Support Files/Pods-OHFinancialServices/Pods-OHFinancialServices.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -549,6 +551,7 @@
 				B203D7AA22758B780067359C /* Common.swift */,
 				B201635D2283D6D500DD50C5 /* DeviceAuthorizationHelper.swift */,
 				B201635F2283D7D600DD50C5 /* AuthorizationTool.swift */,
+				B2BE10DB22B1DF94006A4AE2 /* PublicAlertController.swift */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -1166,6 +1169,7 @@
 				B239937822827EED0006B5EE /* BaseTableViewCell.swift in Sources */,
 				B2782EAF228ABDD500D7BF2D /* BaseFuncViewController.swift in Sources */,
 				B2B18D0E228544E0005745D5 /* QRCodeViewController.swift in Sources */,
+				B2BE10DC22B1DF94006A4AE2 /* PublicAlertController.swift in Sources */,
 				B29BD03622B0A5A000F4835E /* OHRepayFirstViewController.swift in Sources */,
 				B282CD5D2276F36700E87249 /* BannerViewModel.swift in Sources */,
 				B201636222841CB800DD50C5 /* Float-Extension.swift in Sources */,
