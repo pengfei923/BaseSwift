@@ -66,8 +66,8 @@ class NetWorkTools: NSObject {
             for(key,value) in parameters! {
                 multipartFormData.append(value.data(using: .utf8)!, withName: key)
             }
-        }, to: url) { encodingResul in
-            switch encodingResul {
+        }, to: url) { encodingResult in
+            switch encodingResult {
             case .success(let upload, _, _) :
                 upload.responseJSON(completionHandler: { (response) in
                     guard let result = response.result.value else {return}
@@ -86,6 +86,38 @@ class NetWorkTools: NSObject {
                 print(error)
             }
         }
+    }
+    /// 上传多张图片
+    class func uploadMoreImagesToService(url:String,parameters:[String:String]? = nil,imagesArr:Array<String>,finishedCallBack:@escaping (_ result:Any) -> ()) {
+        guard imagesArr.count != 0 else {return}
         
+        for (index,image) in imagesArr.enumerated() {
+            let imageData = UIImage(named: image)?.jpegData(compressionQuality: 0.5)
+            Alamofire.upload(multipartFormData: { (multipartFormData) in
+                multipartFormData.append(imageData!, withName: "file", fileName: "img.jpg", mimeType: "image/jpeg")
+                for(key,value) in parameters! {
+                    multipartFormData.append(value.data(using: .utf8)!, withName: key)
+                }
+            }, to: url) { (encodingResult) in
+                switch encodingResult {
+                case.success(let upload,_,_):
+                    upload.responseJSON(completionHandler: { (response) in
+                        guard let result = response.result.value else {return}
+                        guard let resultDict = result as? [String : Any] else {return}
+                        guard let dataDict = resultDict["data"] as? [String : Any] else {return}
+                        guard let errorCode = resultDict["errorCode"] as? Float else {return}
+                        guard let errorInfo = resultDict["errorInfo"] as? String else {return}
+                        if errorCode == 0 {
+                            finishedCallBack(dataDict)
+                            SwiftNotice.showNoticeWithText(.success, text: "第\(index + 1)张上传成功", autoClear: true, autoClearTime: 1)
+                        }else {
+                            SwiftNotice.showNoticeWithText(.error, text: "\(errorInfo)", autoClear: true, autoClearTime: 1)
+                        }
+                    })
+                case.failure(let error):
+                    print(error)
+                }
+            }
+        }
     }
 }

@@ -34,13 +34,14 @@ class ThirdViewController: BaseSwiftViewController {
         return helper
     }()
     
-    private lazy var dataArray : [String] = ["测试webView","测试登录界面细节","测试bar按钮","测试倒计时按钮","测试保存数据","测试删除数据","测试获取数据","测试二维码的生成","获取定位权限","基础方法的调用","内容提示信息"]
+    private lazy var dataArray : [String] = ["测试webView","测试登录界面细节","测试bar按钮","测试倒计时按钮","测试保存数据","测试删除数据","测试获取数据","测试二维码的生成","获取定位权限","基础方法的调用","RxSwift使用","内购测试"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
     
     }
+    
     
     override func setupUI() {
         super.setupUI()
@@ -49,6 +50,9 @@ class ThirdViewController: BaseSwiftViewController {
         setupBannerView()
         loadData()
         
+        for (index,value) in dataArray.enumerated() {
+            print("\(index)\(value)")
+        }
     }
 
 }
@@ -136,7 +140,46 @@ extension ThirdViewController:UITableViewDelegate,UITableViewDataSource {
         }
         if indexPath.row == 10 {
             
+            let vc = RxswiftDemoViewController()
+            vc.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+        }
+        
+        if indexPath.row == 11 {
+            let vc = ApplyPayViewController()
+            vc.hidesBottomBarWhenPushed = true
+            self.navigationController?.pushViewController(vc, animated: true)
+            
         }
     }
 }
+
+class MyPoint {
+    var x:Float = 0
+    var y:Float = 0
+    func setMyPoint(tempX:Float,tempY:Float) {
+        x = tempX
+        y = tempY
+    }
+    
+    func display() {
+        print("(\(x),\(y))")
+    }
+}
+
+struct mePoint {
+    var x:Float = 0
+    var y:Float = 0
+    mutating func setMyPoint(tempX:Float,tempY:Float) {
+        x = tempX
+        y = tempY
+    }
+    
+    func medisplay() {
+        print("\(x),\(y)")
+    }
+}
+
+
 

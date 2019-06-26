@@ -99,6 +99,10 @@
 		B2B5A67C2293CDF900F6F235 /* SystomContactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2B5A67A2293CDF900F6F235 /* SystomContactCell.xib */; };
 		B2B843B7227ECA1E009EC329 /* BaseLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2B843B6227ECA1E009EC329 /* BaseLabel.swift */; };
 		B2BE10DC22B1DF94006A4AE2 /* PublicAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE10DB22B1DF94006A4AE2 /* PublicAlertController.swift */; };
+		B2BE10DE22B23503006A4AE2 /* Other-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE10DD22B23503006A4AE2 /* Other-Extension.swift */; };
+		B2BE10E022B727A0006A4AE2 /* RxswiftDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BE10DF22B727A0006A4AE2 /* RxswiftDemoViewController.swift */; };
+		B2F07D8E22C317A000CCCEEE /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = B2F07D8D22C317A000CCCEEE /* Student.m */; };
+		B2F07D9222C3449000CCCEEE /* ApplyPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2F07D9122C3449000CCCEEE /* ApplyPayViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -206,6 +210,11 @@
 		B2B5A67A2293CDF900F6F235 /* SystomContactCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SystomContactCell.xib; sourceTree = "<group>"; };
 		B2B843B6227ECA1E009EC329 /* BaseLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLabel.swift; sourceTree = "<group>"; };
 		B2BE10DB22B1DF94006A4AE2 /* PublicAlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicAlertController.swift; sourceTree = "<group>"; };
+		B2BE10DD22B23503006A4AE2 /* Other-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Other-Extension.swift"; sourceTree = "<group>"; };
+		B2BE10DF22B727A0006A4AE2 /* RxswiftDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxswiftDemoViewController.swift; sourceTree = "<group>"; };
+		B2F07D8C22C317A000CCCEEE /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		B2F07D8D22C317A000CCCEEE /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		B2F07D9122C3449000CCCEEE /* ApplyPayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyPayViewController.swift; sourceTree = "<group>"; };
 		D336CA1D3001864F070163EC /* Pods-OHFinancialServices.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OHFinancialServices.debug.xcconfig"; path = "Target Support Files/Pods-OHFinancialServices/Pods-OHFinancialServices.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -353,6 +362,7 @@
 				B29216D52282BEFF004B1B9E /* String-Extension.swift */,
 				B201636122841CB800DD50C5 /* Float-Extension.swift */,
 				B2B18D0922850F37005745D5 /* Image-Extension.swift */,
+				B2BE10DD22B23503006A4AE2 /* Other-Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -405,6 +415,7 @@
 		B203D7B222758B780067359C /* Third */ = {
 			isa = PBXGroup;
 			children = (
+				B2F07D8F22C3447200CCCEEE /* ApplePay */,
 				B2782EAD228ABDBD00D7BF2D /* baseFunc */,
 				B2B18D0F22856858005745D5 /* Map */,
 				B2B18D0B228544AE005745D5 /* qrCode */,
@@ -429,6 +440,7 @@
 			children = (
 				B203D7B522758B780067359C /* ThirdViewController.swift */,
 				B203D7B622758B780067359C /* Third.storyboard */,
+				B2BE10DF22B727A0006A4AE2 /* RxswiftDemoViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -540,6 +552,8 @@
 				B203D7C722758B780067359C /* OHFinancialServices-Bridging-Header.h */,
 				B2A31649227EE42400CB043D /* TestOCViewController.h */,
 				B2A3164A227EE42400CB043D /* TestOCViewController.m */,
+				B2F07D8C22C317A000CCCEEE /* Student.h */,
+				B2F07D8D22C317A000CCCEEE /* Student.m */,
 			);
 			path = "Classes-OC";
 			sourceTree = "<group>";
@@ -990,6 +1004,22 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B2F07D8F22C3447200CCCEEE /* ApplePay */ = {
+			isa = PBXGroup;
+			children = (
+				B2F07D9022C3447200CCCEEE /* Controller */,
+			);
+			path = ApplePay;
+			sourceTree = "<group>";
+		};
+		B2F07D9022C3447200CCCEEE /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B2F07D9122C3449000CCCEEE /* ApplyPayViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1145,6 +1175,7 @@
 				B22BF8FD2282D87700900F6F /* SettingNormalCell.swift in Sources */,
 				B203D7C922758B780067359C /* WelcomeViewController.swift in Sources */,
 				B2B18D1122856864005745D5 /* MapViewController.swift in Sources */,
+				B2F07D9222C3449000CCCEEE /* ApplyPayViewController.swift in Sources */,
 				B282CD582276F14700E87249 /* BannerNormalCell.swift in Sources */,
 				B2782E8E228A4BAC00D7BF2D /* NewMapView.m in Sources */,
 				B282CD5B2276F35600E87249 /* BannerModel.swift in Sources */,
@@ -1177,6 +1208,7 @@
 				B203D7DE227591950067359C /* UIView-Extension.swift in Sources */,
 				B203D7CB22758B780067359C /* UIColor-Extension.swift in Sources */,
 				B2B5A6782293CD8500F6F235 /* ContactViewController.swift in Sources */,
+				B2F07D8E22C317A000CCCEEE /* Student.m in Sources */,
 				B203D78E22758ACC0067359C /* AppDelegate.swift in Sources */,
 				B211E9B9227E9412008D27F3 /* UIViewController-Extension.swift in Sources */,
 				B203D7DD227591950067359C /* Bool-Extension.swift in Sources */,
@@ -1195,11 +1227,13 @@
 				B28197CD22895A7000A28EB9 /* NewCustomAnnotationView.m in Sources */,
 				B22BF8FA2282D5D200900F6F /* SettingViewController.swift in Sources */,
 				B203D7D522758DD60067359C /* UIBarBUttonItem-Extension.swift in Sources */,
+				B2BE10E022B727A0006A4AE2 /* RxswiftDemoViewController.swift in Sources */,
 				B203D7CA22758B780067359C /* UIButton-Extension.swift in Sources */,
 				B2B5A6762293CABB00F6F235 /* SystomContactModel.swift in Sources */,
 				B2B5A67B2293CDF900F6F235 /* SystomContactCell.swift in Sources */,
 				B2B843B7227ECA1E009EC329 /* BaseLabel.swift in Sources */,
 				B203D7CF22758B780067359C /* ThirdViewController.swift in Sources */,
+				B2BE10DE22B23503006A4AE2 /* Other-Extension.swift in Sources */,
 				B203D7CD22758B780067359C /* FirstViewController.swift in Sources */,
 				B2138B3B2276C7EB0039BF12 /* SecondViewModel.swift in Sources */,
 				B2138B322276994E0039BF12 /* UserModel.swift in Sources */,

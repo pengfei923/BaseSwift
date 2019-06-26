@@ -155,7 +155,7 @@ extension FirstViewController : UITableViewDelegate,UITableViewDataSource {
         }else {
             if indexPath.row == 0 {
                 cell.personListIcon.image = UIImage(named: "person_applyRecord")
-                cell.personListText.text = "申请记录"
+                cell.personListText.text = "列表练习"
             }
             if indexPath.row == 1 {
                 cell.personListIcon.image = UIImage(named: "person_signMsg")
